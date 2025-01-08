@@ -1,8 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Button } from "@/app/components/button"
 import TypingEffect from './components/TypingEffect'
 import FileButton from './components/FileButton'
 import BlockchainBackground from './components/BlockchainBackground'
