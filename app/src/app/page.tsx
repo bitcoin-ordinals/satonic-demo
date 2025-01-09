@@ -1,21 +1,22 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { getBasePath } from '@/utils/path'
 import TypingEffect from './components/TypingEffect'
 import FileButton from './components/FileButton'
 import BlockchainBackground from './components/BlockchainBackground'
 import CoFounder from './components/CoFounder'
 
 const preUploadedFiles = [
-  { name: 'Project Information Form', url: '/files/Team-Satonic_Project_Information_Form.pdf' },
-  { name: 'Project Specification Document', url: '/files/T2428_Project_Specification_Document.pdf' },
-  { name: 'Project Analysis and Requirement Report', url: '/files/CS491_Analysis_and_Requirement_Report_Template_v2.2 (1).pdf' },
-  { name: 'Demo Presentation', url: '/files/Demo_Presentation.pdf' },
+  { name: 'Project Information Form', url: getBasePath('/files/Team-Satonic_Project_Information_Form.pdf') },
+  { name: 'Project Specification Document', url: getBasePath('/files/T2428_Project_Specification_Document.pdf') },
+  { name: 'Project Analysis and Requirement Report', url: getBasePath('/files/CS491_Analysis_and_Requirement_Report_Template_v2.2 (1).pdf') },
+  { name: 'Demo Presentation', url: getBasePath('/files/Demo_Presentation.pdf') },
 ]
 
 const coFounders = [
-  { name: 'Kaan', role: 'Blockchain Architect', image: '/images/kaan.png' },
-  { name: 'Bersan', role: 'Smart Contract Developer', image: '/images/bersan.png' },
+  { name: 'Kaan', role: 'Blockchain Architect', image: getBasePath('/images/kaan.png') },
+  { name: 'Bersan', role: 'Smart Contract Developer', image: getBasePath('/images/bersan.png') },
 ]
 
 export default function Home() {
